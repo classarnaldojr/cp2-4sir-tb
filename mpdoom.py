@@ -213,7 +213,7 @@ def draw_hand_landmarks(frame, hand_result, movement_state: str, turn_state: tup
     
     turn_direction, turn_velocity = turn_state
     
-    color = (0, 255, 0)
+    color = (150, 150, 150)
     cv2.putText(frame, f"Mov: {movement_state}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
     cv2.putText(frame, f"Dir: {turn_direction}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
     cv2.putText(frame, f"Trig: {TRIGGER_STATE}", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
